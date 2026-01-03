@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESILIENCE | Preparedness & Tactical Gear</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f1111;
+            --card-bg: #1c1f1f;
+            --accent: #e67e22; /* Survival Orange */
+            --text: #e0e0e0;
+            --text-dim: #a0a0a0;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        .logo { font-size: 2.5rem; font-weight: 800; letter-spacing: 4px; color: var(--accent); margin: 0; }
+        .tagline { font-size: 1.1rem; color: var(--text-dim); text-transform: uppercase; margin-top: 10px; }
+
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+
+        .intro { text-align: center; margin-bottom: 50px; }
+        .intro h2 { font-size: 2rem; }
+        .intro p { max-width: 700px; margin: auto; color: var(--text-dim); }
+
+        /* Termék rács */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border: 1px solid #333;
+        }
+
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #444;
+        }
+
+        .card-content { padding: 20px; }
+        .category { color: var(--accent); font-size: 0.8rem; font-weight: bold; text-transform: uppercase; }
+        .card h3 { margin: 10px 0; font-size: 1.3rem; }
+        .card p { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 20px; }
+
+        .buy-btn {
+            display: block;
+            text-align: center;
+            background: var(--accent);
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 2px;
+            transition: 0.2s;
+        }
+
+        .buy-btn:hover { background: #d35400; }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            border-top: 1px solid #333;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="logo">RESILIENCE</h1>
+    <p class="tagline">Strategic Preparedness for an Unstable World</p>
+</header>
+
+<div class="container">
+    <div class="intro">
+        <h2>Systems fail. Independence lasts.</h2>
+        <p>Current global events show how fragile our infrastructure really is. We don't sell fear—we provide the tools to ensure your family's safety and autonomy when the grid goes dark.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <div class="card-img"><i class="fas fa-faucet-drip"></i></div>
+            <div class="card-content">
+                <span class="category">Water Purification</span>
+                <h3>LifeStraw Peak Series</h3>
+                <p>Ensures access to clean drinking water in any environment. Removes 99.99% of bacteria and parasites.</p>
+                <a href="YOUR_LINK_1" class="buy-btn">View on Amazon <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img"><i class="fas fa-solar-panel"></i></div>
+            <div class="card-content">
+                <span class="category">Energy</span>
+                <h3>Portable Solar Charger</h3>
+                <p>Keep your communication devices alive when the power grid is down. Rugged, waterproof, and efficient.</p>
+                <a href="YOUR_LINK_2" class="buy-btn">View on Amazon <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img"><i class="fas fa-first-aid"></i></div>
+            <div class="card-content">
+                <span class="category">Medical</span>
+                <h3>IFAK Trauma Kit</h3>
+                <p>Professional grade medical supplies for emergency situations. Stop the bleed and manage injuries.</p>
+                <a href="YOUR_LINK_3" class="buy-btn">View on Amazon <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img"><i class="fas fa-box-open"></i></div>
+            <div class="card-content">
+                <span class="category">Nutrition</span>
+                <h3>30-Day Food Supply</h3>
+                <p>Freeze-dried meals with a 25-year shelf life. Don't rely on empty grocery store shelves.</p>
+                <a href="YOUR_LINK_4" class="buy-btn">View on Amazon <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>As an Amazon Associate I earn from qualifying purchases.</p>
+    <p>&copy; 2024 RESILIENCE Strategic. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
